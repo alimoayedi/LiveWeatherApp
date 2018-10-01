@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Live Weather</string>
+
+    <!-- GENERAL STRINGS AND ABOUT LAYOUT STRINGS-->
+    <string name="title_activity_favorite_cities">Live Weather</string>
+    <string name="build_version_text">build version: </string>
+    <string name="description_yahoo_logo">powered by yahoo</string>
+    <string name="description_app_logo">app logo</string>
+    <string name="description_developer_logo">developer logo</string>
+    <string name="about_activity_Title">About</string>
+    <string name="about_developedBy_note">Developed by: AMA Studio</string>
+    <string name="about_email_address">amastudio.contact@gmail.com</string>
+    <string name="yahooAttribute">This work is a free app developed over Yahoo!® weather free API through Yahoo Developer Network(YDN).</string>
+    <string name="iconAttribute">Logo and weather condition icons are: "Weather Color" by Yun Liu, licenced under CC by 3.0. (modified)</string>
+
+    <!-- ADD CITY LAYOUT STRINGS -->
+    <string name="enter_location_field_hint">Enter Name...</string>
+    <string name="cancel_btn_txt">Cancel</string>
+
+    <!-- DETAILED WEATHER LAYOUT STRINGS -->
+    <string name="forecast_title">Forecast</string>
+    <string name="description_forecast_imgOne">forecast image one</string>
+    <string name="description_forecast_imgTwo">forecast image two</string>
+    <string name="description_forecast_imgThree">forecast image three</string>
+    <string name="description_forecast_imgFour">forecast image four</string>
+    <string name="description_forecast_imgFive">forecast image five</string>
+    <string name="description_forecast_imgSix">forecast image six</string>
+    <string name="details_title">Details</string>
+    <string name="description_wind_icon">wind icon</string>
+    <string name="description_humidity_icon">humidity icon</string>
+    <string name="description_sunrise_icon">sunrise icon</string>
+    <string name="description_sunset_icon">sunset icon</string>
+    <string name="more_on_yahoo_text">more on</string>
+    <string name="description_yahoo_icon">yahoo weather icon</string>
+
+    <!-- FAVORITE CITY LAYOUT STRINGS -->
+    <string name="empty_list_hint">Use + button to add location</string>
+
+    <!-- LISTVIEW ITEM STRINGS -->
+    <string name="description_weather_condition">weather condition icon</string>
+
+    <!-- SETTING LAYOUT STRINGS -->
+    <string name="done_button_text">DONE</string>
+    <string name="Temperature_label">Temperature</string>
+    <string name="setNoification_checkbox_text">Set notification</string>
+    <string name="notificationInfo">By setting on notification, you will get weather updates for added locations every morning.</string>
+    <string name="celsiusSign">°C</string>
+    <string name="fahrenheitSign">°F</string>
+</resources>

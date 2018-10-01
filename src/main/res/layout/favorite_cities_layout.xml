@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/favoriteActivityLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/item_BG"
+    tools:context="amastudio.ali.liveweather.FavoriteCitiesActivity">
+
+    <TextView
+        android:id="@+id/emptyListText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="@string/empty_list_hint"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_favorite_cities"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="65dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/transparent"
+        app:layout_anchorGravity="bottom|end">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabAddLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_toStartOf="@+id/fabSetting"
+            android:scaleType="center"
+            app:backgroundTint="@android:color/holo_orange_dark"
+            app:srcCompat="@android:drawable/ic_menu_add" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/fab_margin"
+            android:scaleType="center"
+            app:backgroundTint="@android:color/holo_green_dark"
+            app:srcCompat="@android:drawable/ic_menu_manage" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabSync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="35dp"
+        android:layout_marginStart="16dp"
+        android:scaleType="center"
+        app:backgroundTint="@android:color/holo_blue_dark"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="left|bottom"
+        app:srcCompat="@android:drawable/ic_popup_sync" />
+
+    <ImageView
+        android:id="@+id/yahooLogo"
+        android:layout_width="134dp"
+        android:layout_height="40dp"
+
+        android:layout_gravity="bottom"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/description_yahoo_logo"
+        android:scaleType="fitCenter"
+        app:layout_anchor="@+id/fabSync"
+        app:layout_anchorGravity="bottom|center" />
+
+    <ProgressBar
+        android:id="@+id/loadingBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center" />
+
+</android.support.design.widget.CoordinatorLayout>
